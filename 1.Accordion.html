@@ -92,6 +92,26 @@
       .item.open {
         border-top: 4px solid #e67700;
       }
+      .btn--back{
+        font-family: sans-serif;
+        font-size: 32px;
+        background-color: #5c940d;
+        color: #e9fac8;
+        padding: 16px;
+        border-radius: 8px;
+        text-decoration: none;
+        position: absolute;
+        transform: translate(0, 50%);
+      }
+      .btn--back:hover {
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+        background-color: #74b816;
+      }
+      .btn--back:active{
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        background-color: #5c940d;
+      }
+      
     </style>
 
   </head>
@@ -194,6 +214,7 @@
         </div>
       </div>
     </div>
+    <a class="btn--back" href="index.html">Back</a>
     <!-- JavaScript logic -->
     <script >
       let acc = document.querySelectorAll('.btn--arrow');
