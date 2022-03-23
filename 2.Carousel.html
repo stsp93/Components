@@ -17,7 +17,7 @@
         box-sizing: border-box;
         font-family: "Inter", sans-serif;
       }
-      body{
+      body {
         width: 1200px;
         margin: 0 auto;
       }
@@ -31,15 +31,11 @@
         border-radius: 8px;
 
         position: relative;
-
-        
       }
-      .slide{
-         display: flex;
+      .slide {
+        display: flex;
         justify-content: center;
-        gap: 64px; 
-
-        
+        gap: 64px;
       }
       /* Text style */
       .description {
@@ -105,6 +101,7 @@
         border: 2px solid #0c8599;
         border-radius: 50%;
 
+        transition: all 1s;
         cursor: pointer;
       }
       /* IMAGE STYLE */
@@ -121,9 +118,10 @@
       }
       .container .slide.inactive {
         display: none;
+        
       }
       /* BACK BUTTON */
-      .btn--back{
+      .btn--back {
         font-family: sans-serif;
         font-size: 32px;
         background-color: #5c940d;
@@ -138,7 +136,7 @@
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
         background-color: #74b816;
       }
-      .btn--back:active{
+      .btn--back:active {
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         background-color: #5c940d;
       }
@@ -163,7 +161,9 @@
         <div class="description">
           <p class="name">Wrench</p>
           <p class="text">
-            Wrenches are made in various shapes and sizes and are used for gripping, fastening, turning, tightening and loosening things like pipes, pipe fittings, nuts and bolts.
+            Wrenches are made in various shapes and sizes and are used for
+            gripping, fastening, turning, tightening and loosening things like
+            pipes, pipe fittings, nuts and bolts.
           </p>
         </div>
       </div>
@@ -173,7 +173,8 @@
         <div class="description">
           <p class="name">Ratchet</p>
           <p class="text">
-            Mechanical tool that tightens and loosens nuts and bolts more efficiently than other wrenches.
+            Mechanical tool that tightens and loosens nuts and bolts more
+            efficiently than other wrenches.
           </p>
         </div>
       </div>
@@ -183,7 +184,8 @@
         <div class="description">
           <p class="name">Screws</p>
           <p class="text">
-            The most common use of screws is to hold things together and position items.
+            The most common use of screws is to hold things together and
+            position items.
           </p>
         </div>
       </div>
@@ -227,7 +229,6 @@
         <button class="dot inactive">&nbsp;</button>
         <button class="dot inactive">&nbsp;</button>
       </div>
-
     </div>
     <a class="btn--back" href="index.html">Back</a>
     <script src="script.js"></script>

@@ -38,7 +38,8 @@
         grid-template-columns: auto 1fr auto;
         align-items: center;
         justify-content: center;
-        gap: 24px;
+        row-gap: 8px;
+        column-gap: 24px;
       }
 
       .number,
@@ -57,7 +58,9 @@
       }
       .hidden-item {
         grid-column: 2;
-        display: none;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 1s ease;
       }
       .hidden-item ul {
         display: flex;
@@ -77,10 +80,12 @@
       }
       .btn--arrow:hover svg {
         stroke: #e67700;
+        transition: all 0.3s;
       }
       /* Open effect */
       .open .hidden-item {
-        display: block;
+        max-height: 300px;
+        transition: all 1s ease-in;
       }
       .open .number,
       .open .text {
