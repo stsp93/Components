@@ -3,6 +3,7 @@ let slideIndex = 0;
 const slides = document.querySelectorAll('.slide')
 const btns = document.querySelectorAll('.btn');
 const dots = document.querySelectorAll('.dot')
+const img = document.querySelectorAll('.img')
 
 console.log(slides[0]);
 
@@ -27,9 +28,11 @@ for (let i = 0; i < 2; i++) {
         for (let j = 0; j < slides.length; j++) {
             slides[j].classList.add('inactive');
             dots[j].classList.add('inactive');
+            img[j].classList.add('hidden')
         }
         slides[slideIndex].classList.toggle('inactive')
         dots[slideIndex].classList.toggle('inactive');
+        img[slideIndex].classList.toggle('hidden');
     })
 }
 // DOTS LOGIC

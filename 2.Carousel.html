@@ -25,16 +25,17 @@
       .container {
         width: 1000px;
         margin: 100px auto;
-        background-color: #0c8599;
         padding: 48px;
         padding-left: 98px;
         border-radius: 8px;
-
+        
         position: relative;
       }
       .slide {
         display: flex;
+        background-color: #0c8599;
         justify-content: center;
+        position: absolute;
         gap: 64px;
       }
       /* Text style */
@@ -90,9 +91,9 @@
         gap: 8px;
 
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 50%;
-        transform: translate(-50%, 150%);
+        transform: translate(-50%, 100%);
       }
       .dot {
         height: 16px;
@@ -106,20 +107,23 @@
       }
       /* IMAGE STYLE */
       .img {
-        height: 250px;
+        max-height: 250px;
         box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.25);
 
         border-radius: 8px;
         transform: scale(1.5);
+        opacity: 1;
+        transition: all 1s;
       }
       /* EFFECTS */
       .dots .inactive {
         background-color: #fff;
       }
       .container .slide.inactive {
-        display: none;
+        visibility: hidden;
         
       }
+      .hidden-item
       /* BACK BUTTON */
       .btn--back {
         font-family: sans-serif;
@@ -140,6 +144,10 @@
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         background-color: #5c940d;
       }
+      .hidden{
+        opacity: 0.2;
+        transition: all 0.5s;
+      }
     </style>
   </head>
   <body>
@@ -157,7 +165,7 @@
       </div>
       <!-- SLIDE 2 -->
       <div class="slide inactive">
-        <img class="img" src="tool2.jpg" alt="Wrench" />
+        <img class="img hidden" src="tool2.jpg" alt="Wrench" />
         <div class="description">
           <p class="name">Wrench</p>
           <p class="text">
@@ -169,7 +177,7 @@
       </div>
       <!-- SLIDE 3 -->
       <div class="slide inactive">
-        <img class="img" src="tool3.jpg" alt="Pipe wrench" />
+        <img class="img hidden" src="tool3.jpg" alt="Pipe wrench" />
         <div class="description">
           <p class="name">Ratchet</p>
           <p class="text">
@@ -180,7 +188,7 @@
       </div>
       <!-- SLIDE 4 -->
       <div class="slide inactive">
-        <img class="img" src="tool4.jpg" alt="Pipe wrench" />
+        <img class="img hidden" src="tool4.jpg" alt="Pipe wrench" />
         <div class="description">
           <p class="name">Screws</p>
           <p class="text">
